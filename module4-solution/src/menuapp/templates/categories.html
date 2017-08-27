@@ -1,0 +1,8 @@
+<h3>Menu Categories</h3>
+<ul class="list-group">
+  <li ng-repeat="category in $ctrl.categories"
+      ui-sref="items({categoryShortName: category.short_name})"
+      class="list-group-item">
+    <a href="#">{{category.name}}</a>
+  </li>
+</ul>
